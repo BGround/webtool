@@ -1,0 +1,20 @@
+{
+  "title": "Website Directory",
+  "search": {
+    "placeholder": "Search websites..."
+  },
+  "categories": {
+    "all": "All"
+  },
+  "addWebsite": {
+    "title": "Add New Website",
+    "form": {
+      "title": "Title",
+      "url": "URL",
+      "description": "Description",
+      "category": "Category",
+      "submit": "Add Website",
+      "cancel": "Cancel"
+    }
+  }
+}

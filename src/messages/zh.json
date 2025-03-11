@@ -1,0 +1,20 @@
+{
+  "title": "网站目录",
+  "search": {
+    "placeholder": "搜索网站..."
+  },
+  "categories": {
+    "all": "全部"
+  },
+  "addWebsite": {
+    "title": "添加新网站",
+    "form": {
+      "title": "标题",
+      "url": "网址",
+      "description": "描述",
+      "category": "分类",
+      "submit": "添加网站",
+      "cancel": "取消"
+    }
+  }
+}
