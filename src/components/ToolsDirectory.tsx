@@ -170,7 +170,7 @@ export default function ToolsDirectory() {
   });
 
   return (
-    <section className="bg-white/50 dark:bg-gray-900/50 backdrop-blur-md transition-colors duration-200" id="tools">
+    <section className="bg-[#f7f6f2] dark:bg-gray-900 transition-colors duration-200" id="tools">
       <div className="mx-auto w-full max-w-8xl px-5 pt-8 md:px-10">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-4 mt-6 text-3xl font-extrabold md:text-3xl dark:text-white">Online Tools Directory</h2>
@@ -190,7 +190,7 @@ export default function ToolsDirectory() {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#eb5e2f] focus:ring-offset-2 shadow-sm ${
                   activeCategory === category.id
                     ? 'bg-[#eb5e2f] text-white shadow-md'
-                    : 'bg-white/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 hover:bg-gray-100/80 dark:hover:bg-gray-700/80'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
                 }`}
                 role="radio"
                 aria-checked={activeCategory === category.id}
@@ -207,7 +207,7 @@ export default function ToolsDirectory() {
             filteredTools.map((tool) => (
               <a
                 key={tool.id}
-                className="link rounded-2xl p-4 md:p-5 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-200 dark:hover:bg-gray-700/80"
+                className="link rounded-2xl p-4 md:p-5 bg-white dark:bg-gray-800 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-200 dark:hover:bg-gray-700"
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
