@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next",
+      "config": {
+        "installCommand": "npm install --no-package-lock",
+        "build": {
+          "env": {
+            "NODE_OPTIONS": "--max_old_space_size=4096"
+          }
+        }
+      }
+    }
+  ]
+} 
