@@ -22,7 +22,13 @@ try {
 
 // 安装依赖并忽略完整性检查
 try {
+  console.log('Installing dependencies...');
   execSync('npm install --no-package-lock --no-audit --no-fund --legacy-peer-deps', { stdio: 'inherit' });
+  
+  // 确保安装了postcss和autoprefixer
+  console.log('Ensuring PostCSS and other required dependencies are installed...');
+  execSync('npm install --no-package-lock --save postcss autoprefixer tailwindcss', { stdio: 'inherit' });
+  
   console.log('Dependencies installed');
 } catch (err) {
   console.error('Error installing dependencies:', err);
