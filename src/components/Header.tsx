@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
@@ -16,13 +17,19 @@ export default function Header() {
           >
             Skip to main content
           </a>
-          
-          <h1 className="text-2xl font-extrabold">
-            <Link href="/" title="WebTool" className="text-[#eb5e2f]">
+
+          <h1 className="text-2xl font-extrabold flex items-center">
+            <Link href="/" title="WebTool" className="text-[#eb5e2f] flex items-center">
+              <span className="w-7 h-7 mr-2 relative">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-full h-full">
+                  <rect width="32" height="32" rx="6" fill="#eb5e2f"/>
+                  <text x="16" y="22" fontFamily="Arial, sans-serif" fontSize="18" fontWeight="bold" textAnchor="middle" fill="white">W</text>
+                </svg>
+              </span>
               WebTool
             </Link>
           </h1>
-          
+
           {/* Navigation links inline */}
           <nav className="ml-10" aria-label="Main navigation">
             <ul className="flex items-center gap-6 text-sm font-medium">

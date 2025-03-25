@@ -1,0 +1,20 @@
+{
+  "name": "WebTool: SEO Tools Box",
+  "short_name": "WebTool",
+  "description": "Your ultimate guide to the best SEO tools online",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#eb5e2f",
+  "background_color": "#ffffff",
+  "display": "standalone"
+} 
