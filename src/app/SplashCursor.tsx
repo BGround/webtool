@@ -156,11 +156,12 @@ export default function SplashCursor({
 
       const halfFloatTexType = isWebGL2
         ? (gl as WebGL2RenderingContext).HALF_FLOAT
-        : (halfFloat && (halfFloat as any).HALF_FLOAT_OES) || 0;
+        : (halfFloat && (halfFloat as OES_texture_half_float).HALF_FLOAT_OES) || 0;
 
-      let formatRGBA: any;
-      let formatRG: any;
-      let formatR: any;
+      type TextureFormat = { internalFormat: number; format: number } | null;
+      let formatRGBA: TextureFormat;
+      let formatRG: TextureFormat;
+      let formatR: TextureFormat;
 
       if (isWebGL2) {
         formatRGBA = getSupportedFormat(
@@ -910,8 +911,8 @@ export default function SplashCursor({
         dye = createDoubleFBO(
           dyeRes.width,
           dyeRes.height,
-          rgba.internalFormat,
-          rgba.format,
+          rgba!.internalFormat,
+          rgba!.format,
           texType,
           filtering
         );
@@ -920,8 +921,8 @@ export default function SplashCursor({
           dye,
           dyeRes.width,
           dyeRes.height,
-          rgba.internalFormat,
-          rgba.format,
+          rgba!.internalFormat,
+          rgba!.format,
           texType,
           filtering
         );
@@ -931,8 +932,8 @@ export default function SplashCursor({
         velocity = createDoubleFBO(
           simRes.width,
           simRes.height,
-          rg.internalFormat,
-          rg.format,
+          rg!.internalFormat,
+          rg!.format,
           texType,
           filtering
         );
@@ -941,8 +942,8 @@ export default function SplashCursor({
           velocity,
           simRes.width,
           simRes.height,
-          rg.internalFormat,
-          rg.format,
+          rg!.internalFormat,
+          rg!.format,
           texType,
           filtering
         );
@@ -951,24 +952,24 @@ export default function SplashCursor({
       divergence = createFBO(
         simRes.width,
         simRes.height,
-        r.internalFormat,
-        r.format,
+        r!.internalFormat,
+        r!.format,
         texType,
         gl.NEAREST
       );
       curl = createFBO(
         simRes.width,
         simRes.height,
-        r.internalFormat,
-        r.format,
+        r!.internalFormat,
+        r!.format,
         texType,
         gl.NEAREST
       );
       pressure = createDoubleFBO(
         simRes.width,
         simRes.height,
-        r.internalFormat,
-        r.format,
+        r!.internalFormat,
+        r!.format,
         texType,
         gl.NEAREST
       );
