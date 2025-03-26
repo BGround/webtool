@@ -49,6 +49,14 @@ const seoTools: Tool[] = [
     category: 'analysis'
   },
   {
+    id: 'cloudflare-dashboard',
+    title: 'Cloudflare Dashboard',
+    description: 'Cloudflare Dashboard provides tools to manage your websites, improve performance, enhance security, and analyze traffic metrics. It offers CDN, DNS management, DDoS protection, and more in one central location.',
+    url: 'https://dash.cloudflare.com/',
+    iconSrc: '/assets/cloudflare-icon.svg',
+    category: 'performance'
+  },
+  {
     id: 'keyword-difficulty-checker',
     title: 'Keyword Difficulty Checker',
     description: 'Ahrefs\' Keyword Difficulty Checker is a tool that evaluates the effort needed to rank in the top 10 search results for a given keyword, using a comprehensive analysis of backlink profiles and various ranking factors.',
