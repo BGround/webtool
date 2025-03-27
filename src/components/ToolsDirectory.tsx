@@ -49,6 +49,14 @@ const seoTools: Tool[] = [
     category: 'analysis'
   },
   {
+    id: 'google-trends',
+    title: 'Google Trends',
+    description: 'Google Trends is a search trends feature that shows how frequently a given search term is entered into Google\'s search engine relative to the site\'s total search volume over a given period of time, helping marketers identify trending topics and seasonal interests.',
+    url: 'https://trends.google.com/home?hl=en-US',
+    iconSrc: 'https://ext.same-assets.com/3726054604/1451179838.svg',
+    category: 'analysis'
+  },
+  {
     id: 'cloudflare-dashboard',
     title: 'Cloudflare Dashboard',
     description: 'Cloudflare Dashboard provides tools to manage your websites, improve performance, enhance security, and analyze traffic metrics. It offers CDN, DNS management, DDoS protection, and more in one central location.',
